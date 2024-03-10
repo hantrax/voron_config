@@ -96,3 +96,12 @@ install_script = install.sh
 server = http://192.168.2.210:7912
 sync_rate = 5
 
+[update_manager timelapse]
+type = git_repo
+primary_branch = main
+path = ~/moonraker-timelapse
+origin = https://github.com/mainsail-crew/moonraker-timelapse.git
+managed_services = klipper moonraker
+
+[timelapse]
+
